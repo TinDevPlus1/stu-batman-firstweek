@@ -1,0 +1,320 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+}
+
+.full-width-header {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 2;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+.navbar-item-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.navbar-item-area,
+ul.nav-menu {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+ul.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+ul.nav-menu li,
+.subnav {
+  list-style-type: none;
+}
+
+ul.nav-menu li.item > a {
+  font-size: 15px;
+  font-weight: 600;
+  padding-right: 18px;
+  margin-right: unset;
+  line-height: 120px;
+  text-transform: uppercase;
+  color: #111111;
+  font-family: "Rubik", sans-serif;
+}
+
+ul.nav-menu li.item-home,
+ul.nav-menu li a:hover,
+#icon:hover,
+.subnav li a:hover {
+  color: #226fb7 !important;
+  cursor: pointer;
+}
+
+.item .subnav {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  height: 20px;
+  transition: height 1s;
+}
+
+ul.nav-menu li:hover .subnav {
+  display: block;
+  /* transition: height 0.3s; */
+  height: 128px;
+}
+
+.nav-expander-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subnav li a {
+  font-family: "Rubik";
+}
+
+#icon {
+  padding-top: 25px;
+}
+
+.nav-expander-container i {
+  font-size: 40px;
+}
+
+.main-container #banner {
+  position: relative;
+  margin-top: 120px;
+  padding: 125px 0 425px;
+  background: url(https://www.devplus.asia/assets/images/devplus/Devplus_missions.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-content {
+  max-width: 750px;
+  margin: auto;
+}
+
+.banner-content .banner-title {
+  color: white;
+  visibility: visible;
+  animation-duration: 3000ms;
+  animation-delay: 300ms;
+  animation-name: fadeInLeft;
+  font-size: 55px;
+  margin-bottom: 16px;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.text-banner {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 35px;
+  color: #505050;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  visibility: visible;
+  animation-duration: 3000ms;
+  animation-delay: 900ms;
+  animation-name: fadeInRight;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.banner-btn {
+  text-align: center;
+  visibility: visible;
+  animation-duration: 2000ms;
+  animation-delay: 1500ms;
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.banner-btn .learn-more {
+  border: 1px solid #ff5421;
+  color: #ffffff;
+  background: #ff5421;
+  padding: 16px 58px;
+  border-radius: 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+}
+
+.banner-btn .learn-more:hover {
+  background: #ff914d !important;
+  cursor: pointer;
+}
+
+.about-part {
+  background: #e7f4f6;
+  padding: 60px 60px 70px;
+  border-radius: 5px;
+}
+
+.about-content .sub-title {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-family: "Rubik", sans-serif;
+  visibility: visible;
+  animation-duration: 2000ms;
+  animation-delay: 300ms;
+  animation-name: fadeInUp;
+}
+
+.about-content .title {
+  font-size: 35px;
+  font-family: "Nunito", sans-serif;
+  visibility: visible;
+  font-weight: 700;
+  margin-bottom: 26px;
+  animation-duration: 2000ms;
+  animation-delay: 400ms;
+  animation-name: fadeInUp;
+}
+
+.about-content .about-text {
+  font-size: 18px;
+  line-height: 30px;
+  color: #505050;
+  visibility: visible;
+  animation-duration: 2000ms;
+  animation-delay: 500ms;
+  animation-name: fadeInUp;
+}
+
+.road-part .road-notice {
+  background: #226fb7;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 18px 25px;
+  text-align: center;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.road-part .road-notice-bord {
+  padding: 0;
+}
+
+.road-part li {
+  list-style-type: none;
+  position: relative;
+  background: #e7f4f6;
+  margin-bottom: 12px;
+  border-radius: 3px;
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+  visibility: visible;
+  animation-duration: 2000ms;
+  animation-delay: 300ms;
+  animation-name: fadeInUp;
+}
+
+.road-part li .date {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #226fb7;
+  border-right: 1px solid #226fb7;
+  padding-right: 10px;
+  font-weight: 600;
+  width: 60px;
+}
+
+.road-part li .desc {
+  padding-left: 95px;
+  font-weight: 500;
+}
+
+.pd-about,
+.pd-road {
+  margin-top: -60px;
+  z-index: 1;
+}
+
+.js-menu {
+  display: block;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  right: -23em;
+  font-size: 15px;
+  top: 0;
+  z-index: 3;
+}
+
+.right-menu {
+  /* display: none; */
+}
