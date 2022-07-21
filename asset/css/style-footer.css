@@ -1,0 +1,114 @@
+.footer {
+  background-image: url(../image/footer-bg.png);
+  background-color: #273c66;
+  background-size: cover;
+  font-size: 16px;
+  color: #fff;
+  padding: 218px 0 93px;
+}
+
+.footer-logo img {
+  width: 190px;
+}
+.footer-info p {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+li {
+  list-style-type: square;
+  color: #226fb7;
+  margin-bottom: 15px;
+}
+
+ul {
+  margin-left: 58px;
+}
+
+li p {
+  color: #fff;
+}
+.icons {
+  display: flex;
+  margin-bottom: 10px;
+}
+.icons a {
+  margin-right: 10px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 100%;
+  background: #226fb7;
+  color: #ffffff;
+  text-align: center;
+}
+
+h4 {
+  margin-bottom: 50px;
+}
+
+.scrollUp i {
+  background: #226fb7;
+  border-radius: 50%;
+  height: 40px;
+  font-size: 24px;
+  font-weight: 600;
+  width: 42px;
+  color: #fff;
+  line-height: 36px;
+  transition: all 0.3s ease;
+  margin-left: 2px;
+  box-shadow: 0px 0px 2px rgb(0 0 0 / 40%);
+  text-align: center;
+  position: fixed;
+  right: 150px;
+  bottom: 50px;
+}
+
+@media (min-width: 992px) {
+  p {
+    text-align: initial;
+  }
+  .scrollUp i {
+    bottom: 50px;
+    right: 30px;
+  }
+
+  ul {
+    margin-left: 0;
+  }
+
+  .h4 {
+    text-align: left;
+  }
+}
+@media (min-width: 768px) and (max-width: 990px) {
+  h4 {
+    text-align: center;
+  }
+  .footer-info p {
+    margin-bottom: 42px;
+    text-align: center;
+  }
+  ul {
+    margin-left: 0 auto;
+  }
+}
+@media (max-width: 576px) {
+  .col-sm-12 {
+    width: 100%;
+  }
+  .footer {
+    padding: 50px 50px 10px 20px;
+  }
+  h4 {
+    text-align: center;
+  }
+  .footer-info p {
+    text-align: center;
+  }
+}
