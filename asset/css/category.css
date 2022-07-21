@@ -1,0 +1,134 @@
+.gray-bg {
+  background-color: #f3f8f9;
+}
+.pb-70 {
+  padding-bottom: 70px;
+}
+.pt-94 {
+  padding-top: 94px;
+}
+/* div {
+    outline: 1px solid #036cdb !important;
+  } */
+/* ::selection {
+    background: #226fb7;
+    text-shadow: none;
+    color: #ffffff;
+  } */
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.y-middle {
+  /* display: -ms-flexbox;
+    display: -webkit-flex; */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+div {
+  display: block;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.rs-categories.style1 .categories-item {
+  border: 1px solid #dfe9eb;
+  background: #ffffff;
+  overflow: hidden;
+  padding: 30px;
+  display: block;
+  color: #505050;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+a {
+  color: #226fb7;
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+  outline: none !important;
+}
+a {
+  color: #0d6efd;
+  text-decoration: underline;
+}
+
+.rs-categories.style1 .categories-item .icon-part {
+  float: left;
+  margin-right: 25px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 100%;
+  background: rgba(22, 170, 202, 0.2);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.rs-categories.style1 .categories-item .icon-part img {
+  transform: scale(1);
+}
+.rs-categories.style1 .categories-item:hover .icon-part img {
+  height: 44%;
+  width: 44%;
+}
+img {
+  width: 50%;
+  height: 50%;
+  transition: all 0.7s !important;
+}
+
+svg {
+  vertical-align: middle;
+}
+
+.rs-categories.style1 .categories-item:hover {
+  background: #226fb7;
+  color: #ffffff;
+  border-color: #226fb7;
+}
+.rs-categories.style1 .categories-item:hover .icon-part {
+  background: #ffffff;
+}
