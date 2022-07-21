@@ -1,0 +1,51 @@
+.carousel-inner .author-decs {
+  padding: 70px 15px;
+  background-color: #f3f8f9;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.desc {
+  text-align: center;
+  position: relative;
+  color: #505050;
+  padding: 80px 40px 30px;
+  font-size: 23px;
+  line-height: 33px;
+  font-weight: 500;
+  font-style: italic;
+}
+/* .carousel-it{
+    position: relative;
+} */
+.author-decs img {
+  position: absolute;
+  width: 66px;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.author-img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 80px;
+}
+.author-img img {
+  width: auto;
+  border-radius: 50%;
+}
+.author-part {
+  text-align: center;
+  padding-top: 45px;
+}
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 45px;
+  color: #226fb7;
+  display: block;
+}
+.designation {
+  font-size: 16px;
+  color: #111111;
+}
