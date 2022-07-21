@@ -1,0 +1,349 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.padding-0{
+    padding: 0px !important;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.hiden{
+    display: none !important;
+}
+
+.our-main-campus {
+    background-image: url(/asset/image/home-8-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 94px 0px 70px 0px;
+}
+
+.our-main-campus_heading {
+    font-size: 36px;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.courses-item {
+    padding: 30px;
+    border: 1px solid #dfe9eb;
+    border-radius: 5px;
+    /* transition: all 0.3s ease; */
+}
+
+.our-main-campus_course-item_img {
+    margin-bottom: 30px;
+}
+
+.our-main-campus_course-item_img img {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.courses-item_content {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 26px;
+}
+
+
+/* Phan Admisson for 2021 */
+
+.admission-for-2021{
+    background: #f3f8f9;
+}
+
+.admission-for-2021 .container{
+    position: relative;
+    padding: 0px;
+}
+
+.admission-for-2021 img{
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto;
+    vertical-align: middle;
+}
+
+.admission-for-2021_content{
+    max-width: 700px;
+    padding: 0px 15px 0px 90px;
+}
+
+.admission-for-2021_title{
+    font-size: 36px;
+    margin-bottom: 26px;
+    font-weight: 700;
+}
+
+.admission-for-2021_desc{
+    font-size: 15px;
+    line-height: 26px;
+
+}
+
+.admission-for-2021_btn{
+    height: 54px;
+}
+
+.admission-for-2021_btn a{
+    padding: 16px 58px;
+    background-color: #226FB7;
+    border-radius: 30px;
+    color: white;
+    font-weight: 900;
+    transition: background-color 0.2s linear;
+    border: 1px solid #226FB7;
+    text-decoration: none;
+    
+}
+
+.admission-for-2021_btn a:hover{
+    text-decoration: none;
+    color: white;
+    background: #1e95ba;
+}
+
+
+/* Some common concerns */
+
+.some-common-concerns{
+    padding: 100px 0px 100px 0px;
+}
+
+.some-common-concerns .container{
+    padding: 0px 15px 0px 15px;
+}
+
+.main-part{
+    background-color: #f9f8f8;
+    padding: 60px 50px 70px;
+}
+
+.some-common-concerns_title h2{
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 700;
+}
+
+.accordion{
+
+}
+
+.card{
+    margin-bottom: 25px;
+    border: none !important;
+}
+
+.accordion_header{
+
+    /* align-items: center; */
+    padding: 0 !important;
+    border: none;
+}
+
+.accordion_btn{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+    font-size: 16px;
+    font-weight: 800;
+    background: #226FB7;
+    box-shadow: 0 0 49px 0 rgb(0 0 0 / 8%);
+    color: #ffffff;
+    border: none;
+    text-align: left;
+}
+
+
+.collapsed{
+    background-color: white;
+    color: black;
+}
+
+.accordion_btn i{
+    margin: 0px 15px 0px 25px;
+}
+
+.accordion_body{
+    padding: 15px 14px;
+}
+
+/* Some common concerns_right */
+
+.img-part{
+    background-image: url("/asset/image/video_03.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    min-height: 625px;
+}
+
+.media-icon {
+    position: relative;
+}
+
+.media-icon a{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background: #226FB7;
+    border-radius: 100%;
+}
+
+.media-icon a:hover::before{
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: -25px;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    animation: pulse-border 2000ms ease-out infinite;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.media-icon i{
+    color: white;
+    font-size: 36px;
+    line-height: 60px;
+    margin-left: 5px;
+}
+
+.btn-close-video{
+
+}
+
+/* Modal */
+
+.modal-dialog{
+    top: 20% !important;
+    /* bottom: 50% !important; */
+    max-width: 900px !important;
+}
+
+.modal-content .btn-close-video{
+    width: 50px;
+    position: absolute;
+    right: 0;
+    top: -30px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(223, 223, 223);
+    font-size: 18px;
+    border: none;
+    text-align: right !important;
+    padding: 0;
+}
+
+.modal-content .btn-close-video i{
+}
+
+/* Animation */
+@keyframes pulse-border {
+    from {
+        transform: scale(1);
+        opacity: 0.8;
+        background-color: #226FB7;}
+    to {
+        transform: scale(2);
+        opacity: 0;
+        }
+  }
+
+.animate-delay-01s{
+    --animate-delay: 0.1s;
+
+}
+
+.animate-delay-02s{
+    --animate-delay: 0.2s;
+
+}
+
+/* media */
+@media only screen and (min-width: 1400px) {
+    .some-common-concerns .container{
+        max-width: 1270px;
+        width: 100%;
+    }
+    
+  }
+
+
+@media only screen and (min-width: 768px) {
+    .our-main-campus .container{
+        max-width: 1270px !important;
+        width: 100%;
+    }
+
+
+
+    .admission-for-2021 .container{
+        max-width: 100% !important;
+        width: 100%;
+    }
+
+  }
+
+
+
+
+
+/* Moble 992px*/
+@media only screen and (max-width: 992px) {
+    .our-main-campus_heading {
+        font-size: 30px;
+        margin-left: 0px;
+        margin-bottom: 50px;
+        font-weight: 700;
+    }
+
+    .courses-item_content {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .courses-item {
+        padding: 25px 20px;
+        border: 1px solid #dfe9eb;
+        border-radius: 5px;
+    }
+    
+    .admission-for-2021_content{
+        max-width: 700px;
+        padding: 20px 15px;
+    }
+
+    .admission-for-2021 .container{
+        max-width: 100%;
+    }
+    .accordion_item i{
+        margin-right: 0px;
+    }
+  }
