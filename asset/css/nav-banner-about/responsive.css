@@ -1,0 +1,102 @@
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container-md {
+    max-width: 720px;
+  }
+  ul.nav-menu li.item > a {
+    line-height: 90px;
+  }
+
+  .logo-container {
+    height: 90px;
+    text-align: right;
+  }
+
+  .main-container #banner {
+    margin-top: 90px;
+  }
+
+  #icon {
+    padding-top: 15px;
+  }
+
+  .logo img {
+    width: 200px;
+  }
+
+  .navbar-item-area,
+  ul.nav-menu {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: block;
+    /* display: none; */
+  }
+
+  .banner-content .banner-title {
+    font-size: 40px;
+    padding: 0 50px;
+  }
+
+  .row {
+    margin-left: -10px;
+    margin-right: -10px;
+    justify-content: space-between;
+  }
+
+  .pd-about,
+  .pd-road {
+    margin-top: 60px !important;
+  }
+
+  .road-part .road-notice-bord {
+    margin: 0 !important;
+  }
+
+  
+
+
+  .nav-mobile {
+    position: fixed;
+    margin-top: 90px !important;
+    z-index: 2;
+    background-color: white;
+    padding: 0;
+    width: 615px;
+  }
+
+  li.item + li.item {
+    border-top: 1px solid #333;
+  }
+
+  a {
+    padding: 0 20px;
+  }
+
+  ul.nav-menu li:hover .subnav {
+    display: none;
+  }
+
+  /* .click-pc {
+    display: none;
+  } */
+  #pc {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 1170px;
+    width: 100%;
+  }
+
+  #mobile{
+    display: none;
+  }
+}
