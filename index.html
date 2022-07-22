@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./asset/css/style.css" />
     <link rel="stylesheet" href="./asset/css//nav-banner-about/nav-banner-about.css">
     <link rel="stylesheet" href="./asset/css/nav-banner-about/responsive.css">
+    <link rel="stylesheet" href="./asset/css/right-menu.css">
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
@@ -48,735 +49,818 @@
   </head>
   <body>
     <!-- 01- Nav -->
-    <div class="full-width-header">
-      <div class="menu">
-        <div class="container-xs container-md container-lg">
+    
+    <div>
+      <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+        >
+      <div class="offcanvas-body right_menu_togle hidden-md">
+        <div class="close-btn">
+          <div id="nav-close">
+            <button
+              type="button"
+              class="button-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+              <i style="font-size: 25px" class="bi bi-x-circle"></i>
+            </button>
+          </div>
+        </div>
+        <div class="canvas-logo">
+          <a class="pointer-default"
+            ><img
+              src="https://devplus.edu.vn/assets/images/Artboard_2.png"
+              alt="logo"
+          /></a>
+        </div>
+        <div class="offcanvas-text">
+          <p>
+            Devplus's mission is filling the gap between school and corporate,
+            reduce in-house training cost and effort for IT companies.
+          </p>
+        </div>
+        <div class="offcanvas-gallery">
+          <div class="gallery-img">
+            <a class="image-popup" href="assets/images/devplus/1.png"
+              ><img
+                src="https://devplus.edu.vn/assets/images/devplus/1.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="gallery-img">
+            <a class="image-popup" href="assets/images/devplus/2.png"
+              ><img
+                src="https://devplus.edu.vn/assets/images/devplus/2.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="gallery-img">
+            <a class="image-popup" href="assets/images/devplus/3.png"
+              ><img
+                src="https://devplus.edu.vn/assets/images/devplus/3.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="gallery-img">
+            <a class="image-popup" href="assets/images/devplus/4.png"
+              ><img
+                src="https://devplus.edu.vn/assets/images/devplus/4.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="gallery-img">
+            <a class="image-popup" href="assets/images/devplus/5.png"
+              ><img
+                src="https://devplus.edu.vn/assets/images/devplus/5.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="gallery-img">
+            <a class="image-popup" href="assets/images/devplus/6.png"
+              ><img
+                src="https://devplus.edu.vn/assets/images/devplus/6.png"
+                alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="map-img">
+          <img src="https://devplus.edu.vn/assets/images/map.png" alt="" />
+        </div>
+        <div class="canvas-contact">
+          <ul class="social">
+            <li>
+              <a
+                href="https://www.facebook.com/Devplusprogramme"
+                target="_blank"
+                ><i class="fa fa-facebook"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+        </div>
+      <div class="full-width-header">
+        <div class="menu">
+          <div class="container-xs container-md container-lg">
+            <div class="row">
+              <div class="col-lg-2 col-md-4 col-xs-2">
+                <div class="logo-container">
+                  <div class="logo">
+                    <img
+                      src="https://www.devplus.asia/assets/images/devplus/Artboard_2.png"
+                      alt=""
+      
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-8 col-xs-8 nav-mobile">
+                <div class="navbar-item-container">
+                  <div class="navbar-item-area">
+                    <div class="navbar-item">
+                      <ul
+                        id="collapseOne"
+                        class="nav-menu"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <li class="item item-home"><a>Home</a></li>
+                        <li class="item"><a>About Devplus</a></li>
+                        <li class="item">
+                          <a>Our Programme</a>
+                          <i class="bi bi-caret-down-fill"></i>
+                          <ul class="subnav">
+                            <li class="pt-2">
+                              <a class="text-black lh-lg pe-4" href="#"
+                                >One Plus Campus</a
+                              >
+                            </li>
+                            <li class="pt-2">
+                              <a class="text-black lh-lg pe-4" href="#"
+                                >Two Plus Campus</a
+                              >
+                            </li>
+                            <li class="pt-2 pb-2">
+                              <a class="text-black lh-lg pe-4" href="#"
+                                >Three Plus Campus</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="item"><a>Devplus Activities</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-xs-2">
+                <div class="nav-expander-container">
+                  <span id="icon">
+                    <i
+                      class="bi bi-list"
+                      id="mobile"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="false"
+                      aria-controls="collapseOne"
+                    ></i>
+      
+                    <button type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight">
+                      <i class="bi bi-list" id="pc"></i>
+                    </button>
+      
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-container">
+        <div id="banner">
+          <div class="container-xs container-md container-lg">
+            <div class="banner-content">
+              <h1 class="banner-title capitalize fadeInLeft">
+                <b>
+                  Devplus will support the early stage developers go the right
+                  career path
+                </b>
+              </h1>
+              <div class="text-banner fadeInRight">
+                Devplus is not a training center, it’s battle campus for you to
+                level up your skillsets and ready to onboard any projects in our
+                “kindest” companies listing
+              </div>
+              <div class="banner-btn fadeInUp">
+                <a
+                  href="https://stunited.typeform.com/registration"
+                  class="learn-more"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="about">
+          <div class="container-xs container-md container-lg">
+            <div class="row row-content">
+              <div class="col-lg-8 pe-xl-5 pd-about">
+                <div class="about-part">
+                  <div class="about-content">
+                    <div class="sub-title text-primary">
+                      <b> About Devplus </b>
+                    </div>
+                    <h2 class="title">
+                      The Fact: Skilled labour shortage for software companies but
+                      full of freshers and low level juniors
+                    </h2>
+                    <div class="about-text">
+                      Our responsibility is filling the gap between the quality of
+                      graduate students and the quality of engineers. Devplus will
+                      help reducing the cost of re-training and accelerating the
+                      skill-up progress of students and freshers.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 pd-road">
+                <div class="road-part">
+                  <h4 class="road-notice">Road to be a devplus</h4>
+                  <ul class="road-notice-bord">
+                    <li class="fadeInUp">
+                      <div class="date">1</div>
+                      <div class="desc">Apply Devplus</div>
+                    </li>
+                    <li class="fadeInUp">
+                      <div class="date">2</div>
+                      <div class="desc">Testing and Interview</div>
+                    </li>
+                    <li class="fadeInUp">
+                      <div class="date">3</div>
+                      <div class="desc">1st plus (+) campus</div>
+                    </li>
+                    <li class="fadeInUp">
+                      <div class="date">4</div>
+                      <div class="desc">2nd plus (++) campus</div>
+                    </li>
+                    <li class="fadeInUp">
+                      <div class="date">5</div>
+                      <div class="desc">Onboard & start your career</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--
+        05- Category
+      -->
+      <div
+        id="rs-categories"
+        class="rs-categories gray-bg style1 pt-94 pb-70 md-pt-64 md-pb-40"
+      >
+        <div class="container">
+          <div class="row y-middle mb-50 md-mb-30">
+            <div class="col-md-12 sm-mb-30">
+              <div class="sec-title">
+                <h2 class="title mb-0">
+                  What an engineer after Devplus will must have?
+                </h2>
+              </div>
+            </div>
+          </div>
           <div class="row">
-            <div class="col-lg-2 col-md-4 col-xs-2">
-              <div class="logo-container">
-                <div class="logo">
+            <div
+              class="col-lg-4 col-md-6 mb-30 wow fadeInUp"
+              data-wow-delay="300ms"
+              data-wow-duration="2000ms"
+              style="
+                visibility: visible;
+                animation-duration: 2000ms;
+                animation-delay: 300ms;
+                animation-name: fadeInUp;
+              "
+            >
+              <a class="categories-item">
+                <div class="icon-part">
                   <img
-                    src="https://www.devplus.asia/assets/images/devplus/Artboard_2.png"
+                    src="https://devplus.edu.vn/assets/images/categories/icons/1.png"
                     alt=""
-
-                    
                   />
                 </div>
-              </div>
-            </div>
-            <div class="col-lg-8 col-md-8 col-xs-8 nav-mobile">
-              <div class="navbar-item-container">
-                <div class="navbar-item-area">
-                  <div class="navbar-item">
-                    <ul
-                      id="collapseOne"
-                      class="nav-menu"
-                      aria-labelledby="headingOne"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <li class="item item-home"><a>Home</a></li>
-                      <li class="item"><a>About Devplus</a></li>
-                      <li class="item">
-                        <a>Our Programme</a>
-                        <i class="bi bi-caret-down-fill"></i>
-                        <ul class="subnav">
-                          <li class="pt-2">
-                            <a class="text-black lh-lg pe-4" href="#"
-                              >One Plus Campus</a
-                            >
-                          </li>
-                          <li class="pt-2">
-                            <a class="text-black lh-lg pe-4" href="#"
-                              >Two Plus Campus</a
-                            >
-                          </li>
-                          <li class="pt-2 pb-2">
-                            <a class="text-black lh-lg pe-4" href="#"
-                              >Three Plus Campus</a
-                            >
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="item"><a>Devplus Activities</a></li>
-                    </ul>
-                  </div>
+                <div class="content-part">
+                  <h4 class="title">Programing foundation</h4>
+                  <span class="courses">Algorithm, Design pattern</span>
                 </div>
-              </div>
+              </a>
             </div>
-            <div class="col-lg-2 col-md-4 col-xs-2">
-              <div class="nav-expander-container">
-                <span id="icon">
-                  <i
-                    class="bi bi-list"
-                    id="mobile"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="false"
-                    aria-controls="collapseOne"
-                  ></i>
-                  <i class="bi bi-list" id="pc"></i>
-                </span>
-              </div>
+            <div
+              class="col-lg-4 col-md-6 mb-30 wow fadeInUp"
+              data-wow-delay="400ms"
+              data-wow-duration="2000ms"
+              style="
+                visibility: visible;
+                animation-duration: 2000ms;
+                animation-delay: 400ms;
+                animation-name: fadeInUp;
+              "
+            >
+              <a class="categories-item">
+                <div class="icon-part">
+                  <img
+                    src="https://devplus.edu.vn/assets/images/categories/icons/2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="content-part">
+                  <h4 class="title">Database</h4>
+                  <span class="courses">SQL Syntax</span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 mb-30 wow fadeInUp"
+              data-wow-delay="500ms"
+              data-wow-duration="2000ms"
+              style="
+                visibility: visible;
+                animation-duration: 2000ms;
+                animation-delay: 500ms;
+                animation-name: fadeInUp;
+              "
+            >
+              <a class="categories-item">
+                <div class="icon-part">
+                  <img
+                    src="https://devplus.edu.vn/assets/images/categories/icons/3.png"
+                    alt=""
+                  />
+                </div>
+                <div class="content-part">
+                  <h4 class="title">Testing</h4>
+                  <span class="courses">Unit testing, TDD</span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 mb-30 wow fadeInUp"
+              data-wow-delay="300ms"
+              data-wow-duration="2000ms"
+              style="
+                visibility: visible;
+                animation-duration: 2000ms;
+                animation-delay: 300ms;
+                animation-name: fadeInUp;
+              "
+            >
+              <a class="categories-item">
+                <div class="icon-part">
+                  <img
+                    src="https://devplus.edu.vn/assets/images/categories/icons/4.png"
+                    alt=""
+                  />
+                </div>
+                <div class="content-part">
+                  <h4 class="title">Front-end</h4>
+                  <span class="courses">HTM/CSS/Js , ReactJS/VueJS</span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 mb-30 wow fadeInUp"
+              data-wow-delay="400ms"
+              data-wow-duration="2000ms"
+              style="
+                visibility: visible;
+                animation-duration: 2000ms;
+                animation-delay: 400ms;
+                animation-name: fadeInUp;
+              "
+            >
+              <a class="categories-item">
+                <div class="icon-part">
+                  <img
+                    src="https://devplus.edu.vn/assets/images/categories/icons/5.png"
+                    alt=""
+                  />
+                </div>
+                <div class="content-part">
+                  <h4 class="title">Back-end</h4>
+                  <span class="courses">PHP, NodeJS</span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 mb-30 wow fadeInUp"
+              data-wow-delay="500ms"
+              data-wow-duration="2000ms"
+              style="
+                visibility: visible;
+                animation-duration: 2000ms;
+                animation-delay: 500ms;
+                animation-name: fadeInUp;
+              "
+            >
+              <a class="categories-item">
+                <div class="icon-part">
+                  <img
+                    src="https://devplus.edu.vn/assets/images/categories/icons/6.png"
+                    alt=""
+                  />
+                </div>
+                <div class="content-part">
+                  <h4 class="title">Agile Stable Team</h4>
+                  <span class="courses">Agile/Scrum</span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 mb-30 wow fadeInUp"
+              data-wow-delay="500ms"
+              data-wow-duration="2000ms"
+              style="
+                visibility: visible;
+                animation-duration: 2000ms;
+                animation-delay: 500ms;
+                animation-name: fadeInUp;
+              "
+            >
+              <a class="categories-item">
+                <div class="icon-part">
+                  <img
+                    src="https://devplus.edu.vn/assets/images/categories/icons/7.png"
+                    alt=""
+                  />
+                </div>
+                <div class="content-part">
+                  <h4 class="title">English</h4>
+                  <span class="courses">Basic conversion</span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 mb-30 wow fadeInUp"
+              data-wow-delay="500ms"
+              data-wow-duration="2000ms"
+              style="
+                visibility: visible;
+                animation-duration: 2000ms;
+                animation-delay: 500ms;
+                animation-name: fadeInUp;
+              "
+            >
+              <a class="categories-item">
+                <div class="icon-part">
+                  <img
+                    src="https://devplus.edu.vn/assets/images/categories/icons/8.png"
+                    alt=""
+                  />
+                </div>
+                <div class="content-part">
+                  <h4 class="title">Communication</h4>
+                  <span class="courses">HORENSO</span>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 mb-30 wow fadeInUp"
+              data-wow-delay="500ms"
+              data-wow-duration="2000ms"
+              style="
+                visibility: visible;
+                animation-duration: 2000ms;
+                animation-delay: 500ms;
+                animation-name: fadeInUp;
+              "
+            >
+              <a class="categories-item">
+                <div class="icon-part">
+                  <img
+                    src="https://devplus.edu.vn/assets/images/categories/icons/9.png"
+                    alt=""
+                  />
+                </div>
+                <div class="content-part">
+                  <h4 class="title">Career path</h4>
+                  <span class="courses">Work ethic, Integrity</span>
+                </div>
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="main-container">
-      <div id="banner">
-        <div class="container-xs container-md container-lg">
-          <div class="banner-content">
-            <h1 class="banner-title capitalize fadeInLeft">
-              <b>
-                Devplus will support the early stage developers go the right
-                career path
-              </b>
-            </h1>
-            <div class="text-banner fadeInRight">
-              Devplus is not a training center, it’s battle campus for you to
-              level up your skillsets and ready to onboard any projects in our
-              “kindest” companies listing
-            </div>
-            <div class="banner-btn fadeInUp">
-              <a
-                href="https://stunited.typeform.com/registration"
-                class="learn-more"
-                >Learn More</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="about">
-        <div class="container-xs container-md container-lg">
-          <div class="row row-content">
-            <div class="col-lg-8 pe-xl-5 pd-about">
-              <div class="about-part">
-                <div class="about-content">
-                  <div class="sub-title text-primary">
-                    <b> About Devplus </b>
+          <!-- Phan Our Main Campus -->
+          <div class="our-main-campus">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-8">
+                  <div class="our-main-campus_title">
+                    <h1 class="our-main-campus_heading">Our main campus</h1>
                   </div>
-                  <h2 class="title">
-                    The Fact: Skilled labour shortage for software companies but
-                    full of freshers and low level juniors
-                  </h2>
-                  <div class="about-text">
-                    Our responsibility is filling the gap between the quality of
-                    graduate students and the quality of engineers. Devplus will
-                    help reducing the cost of re-training and accelerating the
-                    skill-up progress of students and freshers.
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md mb-30">
+                  <div class="courses-item animate__animated animate__fadeInUp ">
+                    <div class="our-main-campus_course-item_img">
+                      <img src="/asset/image/One_plus.png" alt="" />
+                    </div>
+                    <h2 class="courses-item_content">
+                      One plus (+) Programing foundation
+                    </h2>
+                  </div>
+                </div>
+                <div class="col-md .mb-30">
+                  <div class="courses-item animate__animated animate__fadeInUp animate__delay-1s animate-delay-01s">
+                    <div class="our-main-campus_course-item_img">
+                      <img src="/asset/image/Two_plus.png" alt="" />
+                    </div>
+                    <h2 class="courses-item_content">
+                      Two plus (++) Skill up to to get ready
+                    </h2>
+                  </div>
+                </div>
+                <div class="col-md .mb-30">
+                  <div class="courses-item animate__animated animate__fadeInUp animate__delay-1s animate-delay-02s">
+                    <div class="our-main-campus_course-item_img">
+                      <img src="/asset/image/Three_plus.png" alt="" />
+                    </div>
+                    <h2 class="courses-item_content">
+                      Three plus (+++) How to become a senior
+                    </h2>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 pd-road">
-              <div class="road-part">
-                <h4 class="road-notice">Road to be a devplus</h4>
-                <ul class="road-notice-bord">
-                  <li class="fadeInUp">
-                    <div class="date">1</div>
-                    <div class="desc">Apply Devplus</div>
-                  </li>
-                  <li class="fadeInUp">
-                    <div class="date">2</div>
-                    <div class="desc">Testing and Interview</div>
-                  </li>
-                  <li class="fadeInUp">
-                    <div class="date">3</div>
-                    <div class="desc">1st plus (+) campus</div>
-                  </li>
-                  <li class="fadeInUp">
-                    <div class="date">4</div>
-                    <div class="desc">2nd plus (++) campus</div>
-                  </li>
-                  <li class="fadeInUp">
-                    <div class="date">5</div>
-                    <div class="desc">Onboard & start your career</div>
-                  </li>
+          </div>
+      
+          <!-- Phan Admisson for 2021 -->
+          <div class="admission-for-2021">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6">
+                  <div class="admission-for-2021_img">
+                    <img
+                      src="/asset/image/Admission_for_2021.png"
+                      alt="Admission for 2021"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="admission-for-2021_content animate__animated animate__fadeInUp animate__delay-1s animate-delay-02s">
+                    <div class="sec-title mb-40">
+                      <h2 class="admission-for-2021_title">Admission for 2021</h2>
+                      <div class="admission-for-2021_desc">
+                        Disclaimer: This position is expected to start around Feb 2022
+                        and continue through the entire Summer term. We ask for a
+                        minimum of 12 weeks, full-time, for most internships. Please
+                        consider before submitting an application.
+                      </div>
+                      <div class="admission-for-2021_desc">
+                        Devplus aims to provide students the chance to work with our
+                        clients and awesome mentors to level up your programing
+                        skillset in the RIGHT path. With your education and
+                        experience, you will be able to take on real-world challenges
+                        from day one.
+                      </div>
+                    </div>
+                    <div class="admission-for-2021_btn">
+                      <a href="#">APPLY NOW</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Some common concerns -->
+          <div class="some-common-concerns">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-6 padding-0">
+                  <div class="main-part">
+                    <div class="some-common-concerns_title mb-40">
+                      <h2>Some common concerns</h2>
+                    </div>
+                    <div class="faq-content">
+                      <div class="accordion" id="accordionExample">
+                        <!-- content-1 -->
+                        <div class="accordion_item card">
+                          <div class="accordion_header" id="headingOne">
+                            <button
+                              class="accordion_btn collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne"
+                              aria-expanded="true"
+                              aria-controls="collapseOne"
+                            >
+                              <i class="fa-regular fa-bell" id="bellOne"></i>
+                              <i class="fa-regular fa-bell-slash hiden" id="bellSlashOne"></i>
+                              Do I need to be fulltime during the campus?
+                            </button>
+                          </div>
+                          <div
+                            id="collapseOne"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample"
+                          >
+                            <div class="accordion_body">
+                              Yes, it’s mandatory. Fulltime as well as full commitment
+                              in order to obtain the best achievement.
+                            </div>
+                          </div>
+                        </div>
+      
+                        <!-- content-2 -->
+      
+                        <div class="accordion_item card">
+                          <div class="accordion_header" id="headingTwo">
+                            <button
+                              class="accordion_btn collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwo"
+                              aria-expanded="false"
+                              aria-controls="collapseTwo"
+                            >
+                              <i class="fa-regular fa-bell"></i>
+                              <i class="fa-regular fa-bell-slash hiden"></i>
+                              Does Devplus offer free courses?
+                            </button>
+                          </div>
+                          <div
+                            id="collapseTwo"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample"
+                          >
+                            <div class="accordion_body">
+                              Yes, it’s kind of a scholarship. But, you need to pass
+                              our challenge through test and interview round.
+                            </div>
+                          </div>
+                        </div>
+      
+                        <!-- content-3 -->
+      
+                        <div class="accordion_item card">
+                          <div class="accordion_header" id="headingThree">
+                            <button
+                              class="accordion_btn collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseThree"
+                              aria-expanded="false"
+                              aria-controls="collapseThree"
+                            >
+                              <i class="fa-regular fa-bell"></i>
+                              <i class="fa-regular fa-bell-slash hiden"></i>
+                              Which course will be suitable with me?
+                            </button>
+                          </div>
+                          <div
+                            id="collapseThree"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample"
+                          >
+                            <div class="accordion_body">
+                              The first plus (+) course is designed to students who
+                              would like to join the OJT (on-job-train) programme.
+                              Next level, the second plus (++) course will suitable
+                              for one who got the first plus or fresher, who would
+                              like to be trained in order to ready to onboard the real
+                              projects. The third plus (+++) course is intended to the
+                              alumni of the second plus degree or junior who would
+                              like to reach a specific tech-stack: AI, Blockchain,
+                              Devops...
+                            </div>
+                          </div>
+                        </div>
+      
+                        <!-- content-4 -->
+      
+                        <div class="accordion_item">
+                          <div class="accordion_header" id="headingFour">
+                            <button
+                              class="accordion_btn collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseFour"
+                              aria-expanded="false"
+                              aria-controls="collapseFour"
+                            >
+                              <i class="fa-regular fa-bell"></i>
+                              <i class="fa-regular fa-bell-slash hiden"></i>
+                              Does Devplus guarantee a job after graduating?
+                            </button>
+                          </div>
+                          <div
+                            id="collapseFour"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample"
+                          >
+                            <div class="accordion_body">
+                              Yes, it’s could be a good job. Once you get the second
+                              plus (++) you will ready to onboard the projects of our
+                              partners, the most highly recommended places to work.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-6 padding-0">
+                  <div class="img-part media-icon">
+                    <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <i class="fa-solid fa-play"></i>
+                    </a>
+                  </div>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <button type="button" class=" btn-close-video" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                        <iframe width="900" height="506" src="https://www.youtube.com/embed/mUjhiT0zSKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      <!-- ======= Footer ======= -->
+      <footer id="footer" class="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-12 col-sm-12">
+                <div class="footer-info">
+                  <h4>DEVELOP THE SKILLS TO MOVE FAST AND STAY AHEAD.</h4>
+                  <ul>
+                    <li>
+                      <p>
+                        Devplus is not a training center, it’s battle campus for
+                        you to level up your skillsets and ready to onboard any
+                        projects in our “kindest” companies listing
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-12 col-sm-12 footer-links">
+                <h4>FOR DEVPLUS</h4>
+                <ul>
+                  <li><a href="#">Training space</a></li>
+                  <li><a href="#">Alumni network</a></li>
+                  <li><a href="#">Connect with experts</a></li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--
-      05- Category
-    -->
-    <div
-      id="rs-categories"
-      class="rs-categories gray-bg style1 pt-94 pb-70 md-pt-64 md-pb-40"
-    >
-      <div class="container">
-        <div class="row y-middle mb-50 md-mb-30">
-          <div class="col-md-12 sm-mb-30">
-            <div class="sec-title">
-              <h2 class="title mb-0">
-                What an engineer after Devplus will must have?
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div
-            class="col-lg-4 col-md-6 mb-30 wow fadeInUp"
-            data-wow-delay="300ms"
-            data-wow-duration="2000ms"
-            style="
-              visibility: visible;
-              animation-duration: 2000ms;
-              animation-delay: 300ms;
-              animation-name: fadeInUp;
-            "
-          >
-            <a class="categories-item">
-              <div class="icon-part">
-                <img
-                  src="https://devplus.edu.vn/assets/images/categories/icons/1.png"
-                  alt=""
-                />
+              <div class="col-lg-3 col-md-12 col-sm-12 footer-links">
+                <h4>OUR CAMPUS</h4>
+                <ul>
+                  <li><a href="#">One plus (+) Programing foundation</a></li>
+                  <li><a href="#">Two plus (++) Skill up and onboard</a></li>
+                  <li><a href="#">Three plus (+++) Become a senior</a></li>
+                </ul>
               </div>
-              <div class="content-part">
-                <h4 class="title">Programing foundation</h4>
-                <span class="courses">Algorithm, Design pattern</span>
-              </div>
-            </a>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 mb-30 wow fadeInUp"
-            data-wow-delay="400ms"
-            data-wow-duration="2000ms"
-            style="
-              visibility: visible;
-              animation-duration: 2000ms;
-              animation-delay: 400ms;
-              animation-name: fadeInUp;
-            "
-          >
-            <a class="categories-item">
-              <div class="icon-part">
-                <img
-                  src="https://devplus.edu.vn/assets/images/categories/icons/2.png"
-                  alt=""
-                />
-              </div>
-              <div class="content-part">
-                <h4 class="title">Database</h4>
-                <span class="courses">SQL Syntax</span>
-              </div>
-            </a>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 mb-30 wow fadeInUp"
-            data-wow-delay="500ms"
-            data-wow-duration="2000ms"
-            style="
-              visibility: visible;
-              animation-duration: 2000ms;
-              animation-delay: 500ms;
-              animation-name: fadeInUp;
-            "
-          >
-            <a class="categories-item">
-              <div class="icon-part">
-                <img
-                  src="https://devplus.edu.vn/assets/images/categories/icons/3.png"
-                  alt=""
-                />
-              </div>
-              <div class="content-part">
-                <h4 class="title">Testing</h4>
-                <span class="courses">Unit testing, TDD</span>
-              </div>
-            </a>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 mb-30 wow fadeInUp"
-            data-wow-delay="300ms"
-            data-wow-duration="2000ms"
-            style="
-              visibility: visible;
-              animation-duration: 2000ms;
-              animation-delay: 300ms;
-              animation-name: fadeInUp;
-            "
-          >
-            <a class="categories-item">
-              <div class="icon-part">
-                <img
-                  src="https://devplus.edu.vn/assets/images/categories/icons/4.png"
-                  alt=""
-                />
-              </div>
-              <div class="content-part">
-                <h4 class="title">Front-end</h4>
-                <span class="courses">HTM/CSS/Js , ReactJS/VueJS</span>
-              </div>
-            </a>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 mb-30 wow fadeInUp"
-            data-wow-delay="400ms"
-            data-wow-duration="2000ms"
-            style="
-              visibility: visible;
-              animation-duration: 2000ms;
-              animation-delay: 400ms;
-              animation-name: fadeInUp;
-            "
-          >
-            <a class="categories-item">
-              <div class="icon-part">
-                <img
-                  src="https://devplus.edu.vn/assets/images/categories/icons/5.png"
-                  alt=""
-                />
-              </div>
-              <div class="content-part">
-                <h4 class="title">Back-end</h4>
-                <span class="courses">PHP, NodeJS</span>
-              </div>
-            </a>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 mb-30 wow fadeInUp"
-            data-wow-delay="500ms"
-            data-wow-duration="2000ms"
-            style="
-              visibility: visible;
-              animation-duration: 2000ms;
-              animation-delay: 500ms;
-              animation-name: fadeInUp;
-            "
-          >
-            <a class="categories-item">
-              <div class="icon-part">
-                <img
-                  src="https://devplus.edu.vn/assets/images/categories/icons/6.png"
-                  alt=""
-                />
-              </div>
-              <div class="content-part">
-                <h4 class="title">Agile Stable Team</h4>
-                <span class="courses">Agile/Scrum</span>
-              </div>
-            </a>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 mb-30 wow fadeInUp"
-            data-wow-delay="500ms"
-            data-wow-duration="2000ms"
-            style="
-              visibility: visible;
-              animation-duration: 2000ms;
-              animation-delay: 500ms;
-              animation-name: fadeInUp;
-            "
-          >
-            <a class="categories-item">
-              <div class="icon-part">
-                <img
-                  src="https://devplus.edu.vn/assets/images/categories/icons/7.png"
-                  alt=""
-                />
-              </div>
-              <div class="content-part">
-                <h4 class="title">English</h4>
-                <span class="courses">Basic conversion</span>
-              </div>
-            </a>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 mb-30 wow fadeInUp"
-            data-wow-delay="500ms"
-            data-wow-duration="2000ms"
-            style="
-              visibility: visible;
-              animation-duration: 2000ms;
-              animation-delay: 500ms;
-              animation-name: fadeInUp;
-            "
-          >
-            <a class="categories-item">
-              <div class="icon-part">
-                <img
-                  src="https://devplus.edu.vn/assets/images/categories/icons/8.png"
-                  alt=""
-                />
-              </div>
-              <div class="content-part">
-                <h4 class="title">Communication</h4>
-                <span class="courses">HORENSO</span>
-              </div>
-            </a>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 mb-30 wow fadeInUp"
-            data-wow-delay="500ms"
-            data-wow-duration="2000ms"
-            style="
-              visibility: visible;
-              animation-duration: 2000ms;
-              animation-delay: 500ms;
-              animation-name: fadeInUp;
-            "
-          >
-            <a class="categories-item">
-              <div class="icon-part">
-                <img
-                  src="https://devplus.edu.vn/assets/images/categories/icons/9.png"
-                  alt=""
-                />
-              </div>
-              <div class="content-part">
-                <h4 class="title">Career path</h4>
-                <span class="courses">Work ethic, Integrity</span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-        <!-- Phan Our Main Campus -->
-        <div class="our-main-campus">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-8">
-                <div class="our-main-campus_title">
-                  <h1 class="our-main-campus_heading">Our main campus</h1>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md mb-30">
-                <div class="courses-item animate__animated animate__fadeInUp ">
-                  <div class="our-main-campus_course-item_img">
-                    <img src="/asset/image/One_plus.png" alt="" />
-                  </div>
-                  <h2 class="courses-item_content">
-                    One plus (+) Programing foundation
-                  </h2>
-                </div>
-              </div>
-              <div class="col-md .mb-30">
-                <div class="courses-item animate__animated animate__fadeInUp animate__delay-1s animate-delay-01s">
-                  <div class="our-main-campus_course-item_img">
-                    <img src="/asset/image/Two_plus.png" alt="" />
-                  </div>
-                  <h2 class="courses-item_content">
-                    Two plus (++) Skill up to to get ready
-                  </h2>
-                </div>
-              </div>
-              <div class="col-md .mb-30">
-                <div class="courses-item animate__animated animate__fadeInUp animate__delay-1s animate-delay-02s">
-                  <div class="our-main-campus_course-item_img">
-                    <img src="/asset/image/Three_plus.png" alt="" />
-                  </div>
-                  <h2 class="courses-item_content">
-                    Three plus (+++) How to become a senior
-                  </h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    
-        <!-- Phan Admisson for 2021 -->
-        <div class="admission-for-2021">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-6">
-                <div class="admission-for-2021_img">
-                  <img
-                    src="/asset/image/Admission_for_2021.png"
-                    alt="Admission for 2021"
-                  />
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="admission-for-2021_content animate__animated animate__fadeInUp animate__delay-1s animate-delay-02s">
-                  <div class="sec-title mb-40">
-                    <h2 class="admission-for-2021_title">Admission for 2021</h2>
-                    <div class="admission-for-2021_desc">
-                      Disclaimer: This position is expected to start around Feb 2022
-                      and continue through the entire Summer term. We ask for a
-                      minimum of 12 weeks, full-time, for most internships. Please
-                      consider before submitting an application.
-                    </div>
-                    <div class="admission-for-2021_desc">
-                      Devplus aims to provide students the chance to work with our
-                      clients and awesome mentors to level up your programing
-                      skillset in the RIGHT path. With your education and
-                      experience, you will be able to take on real-world challenges
-                      from day one.
-                    </div>
-                  </div>
-                  <div class="admission-for-2021_btn">
-                    <a href="#">APPLY NOW</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    
-        <!-- Some common concerns -->
-        <div class="some-common-concerns">
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-6 padding-0">
-                <div class="main-part">
-                  <div class="some-common-concerns_title mb-40">
-                    <h2>Some common concerns</h2>
-                  </div>
-                  <div class="faq-content">
-                    <div class="accordion" id="accordionExample">
-                      <!-- content-1 -->
-                      <div class="accordion_item card">
-                        <div class="accordion_header" id="headingOne">
-                          <button
-                            class="accordion_btn collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne"
-                            aria-expanded="true"
-                            aria-controls="collapseOne"
-                          >
-                            <i class="fa-regular fa-bell" id="bellOne"></i>
-                            <i class="fa-regular fa-bell-slash hiden" id="bellSlashOne"></i>
-                            Do I need to be fulltime during the campus?
-                          </button>
-                        </div>
-                        <div
-                          id="collapseOne"
-                          class="accordion-collapse collapse"
-                          aria-labelledby="headingOne"
-                          data-bs-parent="#accordionExample"
-                        >
-                          <div class="accordion_body">
-                            Yes, it’s mandatory. Fulltime as well as full commitment
-                            in order to obtain the best achievement.
-                          </div>
-                        </div>
-                      </div>
-    
-                      <!-- content-2 -->
-    
-                      <div class="accordion_item card">
-                        <div class="accordion_header" id="headingTwo">
-                          <button
-                            class="accordion_btn collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo"
-                            aria-expanded="false"
-                            aria-controls="collapseTwo"
-                          >
-                            <i class="fa-regular fa-bell"></i>
-                            <i class="fa-regular fa-bell-slash hiden"></i>
-                            Does Devplus offer free courses?
-                          </button>
-                        </div>
-                        <div
-                          id="collapseTwo"
-                          class="accordion-collapse collapse"
-                          aria-labelledby="headingTwo"
-                          data-bs-parent="#accordionExample"
-                        >
-                          <div class="accordion_body">
-                            Yes, it’s kind of a scholarship. But, you need to pass
-                            our challenge through test and interview round.
-                          </div>
-                        </div>
-                      </div>
-    
-                      <!-- content-3 -->
-    
-                      <div class="accordion_item card">
-                        <div class="accordion_header" id="headingThree">
-                          <button
-                            class="accordion_btn collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree"
-                            aria-expanded="false"
-                            aria-controls="collapseThree"
-                          >
-                            <i class="fa-regular fa-bell"></i>
-                            <i class="fa-regular fa-bell-slash hiden"></i>
-                            Which course will be suitable with me?
-                          </button>
-                        </div>
-                        <div
-                          id="collapseThree"
-                          class="accordion-collapse collapse"
-                          aria-labelledby="headingThree"
-                          data-bs-parent="#accordionExample"
-                        >
-                          <div class="accordion_body">
-                            The first plus (+) course is designed to students who
-                            would like to join the OJT (on-job-train) programme.
-                            Next level, the second plus (++) course will suitable
-                            for one who got the first plus or fresher, who would
-                            like to be trained in order to ready to onboard the real
-                            projects. The third plus (+++) course is intended to the
-                            alumni of the second plus degree or junior who would
-                            like to reach a specific tech-stack: AI, Blockchain,
-                            Devops...
-                          </div>
-                        </div>
-                      </div>
-    
-                      <!-- content-4 -->
-    
-                      <div class="accordion_item">
-                        <div class="accordion_header" id="headingFour">
-                          <button
-                            class="accordion_btn collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#collapseFour"
-                            aria-expanded="false"
-                            aria-controls="collapseFour"
-                          >
-                            <i class="fa-regular fa-bell"></i>
-                            <i class="fa-regular fa-bell-slash hiden"></i>
-                            Does Devplus guarantee a job after graduating?
-                          </button>
-                        </div>
-                        <div
-                          id="collapseFour"
-                          class="accordion-collapse collapse"
-                          aria-labelledby="headingFour"
-                          data-bs-parent="#accordionExample"
-                        >
-                          <div class="accordion_body">
-                            Yes, it’s could be a good job. Once you get the second
-                            plus (++) you will ready to onboard the projects of our
-                            partners, the most highly recommended places to work.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-6 padding-0">
-                <div class="img-part media-icon">
-                  <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <i class="fa-solid fa-play"></i>
-                  </a>
-                </div>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <button type="button" class=" btn-close-video" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-                      <iframe width="900" height="506" src="https://www.youtube.com/embed/mUjhiT0zSKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-
-
-
-
-    <!-- ======= Footer ======= -->
-    <footer id="footer" class="footer">
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md-12 col-sm-12">
-              <div class="footer-info">
-                <h4>DEVELOP THE SKILLS TO MOVE FAST AND STAY AHEAD.</h4>
+              <div class="col-lg-3 col-md-12 col-sm-12">
+                <h4>ADDRESS</h4>
                 <ul>
                   <li>
                     <p>
-                      Devplus is not a training center, it’s battle campus for
-                      you to level up your skillsets and ready to onboard any
-                      projects in our “kindest” companies listing
+                      368 Đường Trần Hưng Đạo, An Hải, An Hải Tây, Sơn Trà, Đà
+                      Nẵng
                     </p>
                   </li>
+                  <li><a href="#">(+84) 368492885</a></li>
+                  <li><a href="#">hello@stunited.vn</a></li>
                 </ul>
               </div>
             </div>
-
-            <div class="col-lg-3 col-md-12 col-sm-12 footer-links">
-              <h4>FOR DEVPLUS</h4>
-              <ul>
-                <li><a href="#">Training space</a></li>
-                <li><a href="#">Alumni network</a></li>
-                <li><a href="#">Connect with experts</a></li>
-              </ul>
-            </div>
-
-            <div class="col-lg-3 col-md-12 col-sm-12 footer-links">
-              <h4>OUR CAMPUS</h4>
-              <ul>
-                <li><a href="#">One plus (+) Programing foundation</a></li>
-                <li><a href="#">Two plus (++) Skill up and onboard</a></li>
-                <li><a href="#">Three plus (+++) Become a senior</a></li>
-              </ul>
-            </div>
-
-            <div class="col-lg-3 col-md-12 col-sm-12">
-              <h4>ADDRESS</h4>
-              <ul>
-                <li>
-                  <p>
-                    368 Đường Trần Hưng Đạo, An Hải, An Hải Tây, Sơn Trà, Đà
-                    Nẵng
-                  </p>
-                </li>
-                <li><a href="#">(+84) 368492885</a></li>
-                <li><a href="#">hello@stunited.vn</a></li>
-              </ul>
-            </div>
           </div>
         </div>
-      </div>
-
-      <hr style="width: 50%; margin: 5% auto" />
-
-      <div class="footer-bottom">
-        <div class="container">
-          <div class="d-flex justify-content-between">
-            <div>
-              <div class="footer-logo text-center">
-                <img src="./asset/image/Artboard_2.png" alt="" />
+        <hr style="width: 50%; margin: 5% auto" />
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="d-flex justify-content-between">
+              <div>
+                <div class="footer-logo text-center">
+                  <img src="./asset/image/Artboard_2.png" alt="" />
+                </div>
+              </div>
+              <div>
+                <ul class="icons">
+                  <a target="_blank" href="#">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                  <p>FaceBook</p>
+                </ul>
               </div>
             </div>
-            <div>
-              <ul class="icons">
-                <a target="_blank" href="#">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <p>FaceBook</p>
-              </ul>
-            </div>
           </div>
         </div>
+      </footer>
+      <!-- ======= Footer End ======= -->
+      <div class="scrollUp">
+        <button onclick="topFunction()" id="myBtn">
+          <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </button>
       </div>
-    </footer>
-
-    <!-- ======= Footer End ======= -->
-
-    <div class="scrollUp">
-      <button onclick="topFunction()" id="myBtn">
-        <i class="fa fa-angle-up" aria-hidden="true"></i>
-      </button>
     </div>
 
     <!-- <script

@@ -1,0 +1,97 @@
+.offcanvas-body .canvas-logo {
+    padding-left: 0;
+    padding-bottom: 30px;
+    margin-top: 50px;
+  }
+  
+  div {
+    display: block;
+  }
+  
+  .pointer-default {
+    cursor: default;
+  }
+  a {
+    color: #226fb7;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+    outline: none !important;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  img,
+  svg {
+    vertical-align: middle;
+  }
+  
+  .right_menu_togle .canvas-logo img {
+    max-height: 35px;
+  }
+  
+  .right_menu_togle {
+    background: #fafafa;
+    padding: 30px 50px;
+  
+    width: 500px;
+    right: -500px;
+    z-index: 999999;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .offcanvas-end {
+    width: 500px !important;
+  }
+  
+  .right_menu_togle .offcanvas-gallery {
+    display: inline-block !important;
+    margin: 25px;
+  }
+  
+  .offcanvas-gallery .gallery-img {
+    width: 33%;
+    float: left;
+    padding: 0 5px 10px;
+  }
+  .offcanvas-gallery .gallery-img:hover {
+    width: 33%;
+    float: left;
+    padding: 0 5px 10px;
+    transform: scale(1.1);
+  }
+  
+  .close-btn {
+    text-align: left;
+    margin-bottom: 50px;
+  }
+  .offcanvas-text {
+    margin-bottom: 26px;
+    margin-top: 30px;
+  }
+  
+  .map-img {
+    margin: 5px 25px 25px 25px;
+  }
+  .button-close {
+    padding: 0;
+    border: none;
+    background-color: #fafafa;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button-close:hover,
+  .button-close:active {
+    -webkit-transform: scale(1.1) rotate(360deg);
+    -moz-transform: scale(1.1) rotate(360deg);
+    -ms-transform: scale(1.1) rotate(360deg);
+    -o-transform: scale(1.1) rotate(360deg);
+    transform: scale(1.1) rotate(360deg);
+  }
+  

@@ -17,7 +17,7 @@ a {
   display: flex;
 }
 
- .row-content{
+.row-content {
   padding-bottom: 100px !important;
 }
 
@@ -67,7 +67,7 @@ ul.nav-menu li,
 
 .text-black {
   color: #111111 !important;
-  font-family: 'Nunito' !important;
+  font-family: "Nunito" !important;
 }
 
 ul.nav-menu li.item > a {
@@ -89,7 +89,7 @@ ul.nav-menu li a:hover,
   cursor: pointer;
 }
 
-.item .subnav{
+.item .subnav {
   display: block;
   visibility: hidden;
   position: absolute;
@@ -103,8 +103,6 @@ ul.nav-menu li a:hover,
 .item i {
   color: #111111;
 }
-
-
 
 ul.nav-menu li:hover .subnav {
   visibility: visible;
@@ -303,7 +301,7 @@ ul.nav-menu li:hover .subnav {
   padding: 0 !important;
 }
 
-.road-part .road-notice-bord .desc{
+.road-part .road-notice-bord .desc {
   padding: 0 !important;
   font-size: 15px !important;
   font-family: "Rubik", sans-serif !important;

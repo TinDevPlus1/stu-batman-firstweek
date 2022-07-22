@@ -58,9 +58,6 @@
     margin: 0 !important;
   }
 
-  
-
-
   .nav-mobile {
     position: fixed;
     margin-top: 90px !important;
@@ -96,7 +93,7 @@
     width: 100%;
   }
 
-  #mobile{
+  #mobile {
     display: none;
   }
 }
