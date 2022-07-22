@@ -1,22 +1,29 @@
-.carousel-inner .author-decs {
-  padding: 70px 15px;
+.author-decs {
+  /* width: 100%; */
   background-color: #f3f8f9;
   border-radius: 5px 5px 5px 5px;
+  padding: 20px 35px;
+  margin: 0 !important;
+  /* min-height: 440px; */
 }
 
 .desc {
   text-align: center;
   position: relative;
   color: #505050;
-  padding: 80px 40px 30px;
+  padding: 65px 20px 30px;
   font-size: 23px;
   line-height: 33px;
   font-weight: 500;
   font-style: italic;
+  height: 400px;
+  /* width: 100%; */
 }
-/* .carousel-it{
-    position: relative;
-} */
+
+.carousel-it{
+  width: 100%;
+}
+
 .author-decs img {
   position: absolute;
   width: 66px;
@@ -28,7 +35,8 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 80px;
+  bottom: 135px;
+  left: 276px;
 }
 .author-img img {
   width: auto;
@@ -37,6 +45,7 @@
 .author-part {
   text-align: center;
   padding-top: 45px;
+  margin-right: 50px;
 }
 .name {
   font-size: 20px;
@@ -49,3 +58,95 @@
   font-size: 16px;
   color: #111111;
 }
+.quote {
+  width: 66px;
+  top: -13px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+  .wp-slider {
+    width: 1240px;
+    height: auto;
+    margin: 0 auto;
+  }
+.owl-dots button span {
+  background: #226fb7;
+}
+
+.owl-slider{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+.owl-nav button.owl-prev {
+  left: 0;
+}
+.owl-nav button.owl-next {
+  right: 0;
+}
+
+.owl-dots {
+  text-align: center;
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+.owl-dots button.owl-dot {
+  width: 50px;
+  height: 5px;
+  border-radius: 15%;
+  display: inline-block;
+  background: #ccc;
+  margin: 0 3px;
+}
+.owl-dots button.owl-dot.active {
+  background-color: #226FB7;
+}
+.owl-dots button.owl-dot:focus {
+  outline: none;
+}
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.38) !important;
+}
+span {
+  font-size: 70px;
+  position: relative;
+  top: -5px;
+}
+.owl-nav button:focus {
+  outline: none;
+}
+
+/* .scrollUp{
+  visibility: hidden;
+} */
+
+@media (min-width: 992px){
+  .author-img{
+    left: 47%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 990px){
+  .author-img{
+    left: 48%;
+  }
+}
+@media (max-width: 576px){
+  .author-img{
+    left: 48%;
+  }
+}
+

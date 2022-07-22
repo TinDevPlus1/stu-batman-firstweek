@@ -18,17 +18,17 @@ a {
   text-decoration: none;
   color: #fff;
 }
-li {
+.lis {
   list-style-type: square;
   color: #226fb7;
   margin-bottom: 15px;
 }
 
-ul {
+/* ul {
   margin-left: 58px;
-}
+} */
 
-li p {
+.lis p {
   color: #fff;
 }
 .icons {
@@ -47,12 +47,12 @@ li p {
   text-align: center;
 }
 
-h4 {
+.h4s {
   margin-bottom: 50px;
 }
 
-.scrollUp i {
-  background: #226fb7;
+#myBtn {
+  /* background: #226fb7; */
   border-radius: 50%;
   height: 40px;
   font-size: 24px;
@@ -67,10 +67,16 @@ h4 {
   position: fixed;
   right: 150px;
   bottom: 50px;
+  background-color: #226fb7 !important ;
+  border: none;
+}
+
+#myBtn i{
+  padding-bottom: 13px;
 }
 
 @media (min-width: 992px) {
-  p {
+  .ps {
     text-align: initial;
   }
   .scrollUp i {
@@ -78,24 +84,23 @@ h4 {
     right: 30px;
   }
 
-  ul {
+  .uls {
     margin-left: 0;
   }
 
-  .h4 {
+  .h4s {
     text-align: left;
   }
 }
 @media (min-width: 768px) and (max-width: 990px) {
-  h4 {
+  /* h4 {
     text-align: center;
-  }
+  } */
   .footer-info p {
     margin-bottom: 42px;
-    text-align: center;
   }
-  ul {
-    margin-left: 0 auto;
+  .uls {
+    margin-left: 0 ;
   }
 }
 @media (max-width: 576px) {
@@ -105,10 +110,10 @@ h4 {
   .footer {
     padding: 50px 50px 10px 20px;
   }
-  h4 {
-    text-align: center;
+  .h4s{
+    margin-bottom: 20px ;
   }
-  .footer-info p {
-    text-align: center;
+  .scrollUp i{
+    right: 10px;
   }
 }
